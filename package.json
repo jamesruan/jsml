@@ -1,5 +1,5 @@
 {
-  "name": "jsml",
+  "name": "jsml-jquery",
   "version": "0.1.0",
   "description": "Javascript object to DOM translator, inspired by https://github.com/caldwell/JSML",
   "main": "jsml.js",
@@ -18,5 +18,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jamesruan/jsml/issues"
+  },
+  "dependencies": {
+    "jquery": "^2.1.0"
   }
 }
