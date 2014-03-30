@@ -1,0 +1,22 @@
+{
+  "name": "jsml",
+  "version": "0.1.0",
+  "description": "Javascript object to DOM translator, inspired by https://github.com/caldwell/JSML",
+  "main": "jsml.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jamesruan/jsml.git"
+  },
+  "keywords": [
+    "DOM",
+    "translator"
+  ],
+  "author": "James Ruan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamesruan/jsml/issues"
+  }
+}
