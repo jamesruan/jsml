@@ -64,15 +64,19 @@ jQuery = require('jquery');
         function toHTML(prev, cur, index, array){
             if(prev.constructor === Array){
                 if(prev.length === 1){
+                    /* [tagname] => tagname*/
                     prev = prev[0];
                 }
                 else{
+                    /* [tagname1 ... ] => tagname1 ...*/
                     prev = prev.reduce(toHTML)[0];
                 }
             }
+
             if(prev.constructor === String){
+                /* tagname => OBJ(tagname) */
                 if(isTag(prev)){
-                    var el=document.createElement(prev);
+                    var el = document.createElement(prev);
                     prev = $(el);
                 }
                 else{
@@ -80,6 +84,7 @@ jQuery = require('jquery');
                     return;
                 }
             }
+
             //prev is head of the array and should now be an JQuery wrapped DOM, so test the cur
             if(cur.constructor === Object){	//attr
                 for(var attr in cur){
@@ -101,7 +106,7 @@ jQuery = require('jquery');
                 }
                 if(cur.constructor === String){
                     if(isTag(cur)){
-                        var el=document.createElement(cur);
+                        var el = document.createElement(cur);
                         cur = $(el);
                     }
                     else{
