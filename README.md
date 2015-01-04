@@ -18,6 +18,7 @@ JSON to HTML translating rule:
 	[tag, {attr}, something] -> "<tag attr>something</tag>"
 
 e.g.
+
 	["html",
 		["head", ["meta", {"http-equiv":"content-type", "content":"text/html;charset=utf-8"}]
 				 ["title", "Example Page"]]
@@ -36,6 +37,7 @@ e.g.
 	</html>
 
 usage:
+
 	OBJ.jsml(json_string);
 
 'OBJ' is a jquery DOM object.
