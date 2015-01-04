@@ -1,0 +1,26 @@
+{
+  "name": "jsml-jquery",
+  "main": "jsml.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jamesruan/jsml",
+  "authors": [
+    "James Ruan <ruanbeihong@gmail.com>"
+  ],
+  "description": "Javascript object to DOM translator, inspired by https://github.com/caldwell/JSML",
+  "keywords": [
+    "json",
+	"html",
+	"jquery-plugin"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
